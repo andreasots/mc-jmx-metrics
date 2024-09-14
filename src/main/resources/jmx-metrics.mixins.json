@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "eu.qrpth.mc.jmx_metrics.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "server": [
+    "MinecraftServerStatisticsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

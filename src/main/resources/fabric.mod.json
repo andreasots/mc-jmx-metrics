@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "jmx-metrics",
+	"version": "${version}",
+	"name": "JMX Metrics",
+	"description": "Additional JMX metrics",
+	"authors": [
+		{
+			"name": "qrpth",
+			"contact": {
+				"email": "qrpth@qrpth.eu"
+			}
+		}
+	],
+	"contact": {
+		"homepage": "https://github.com/andreasots/mc-jmx-metrics",
+		"sources": "https://github.com/andreasots/mc-jmx-metrics",
+		"issues": "https://github.com/andreasots/mc-jmx-metrics/issues"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/jmx-metrics/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			"eu.qrpth.mc.jmx_metrics.JMXMetrics"
+		]
+	},
+	"accessWidener": "jmx-metrics.accesswidener",
+	"mixins": [
+		"jmx-metrics.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21"
+	}
+}
